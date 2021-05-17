@@ -1,0 +1,177 @@
+.videos-content,
+.musics-content,
+.lives-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  width: 100%;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.musics-content{
+  justify-content: space-around;
+}
+.videos-content .video-container,
+.musics-content .music-container,
+.lives-content .live-container{
+  width: 250px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  margin-right: 18px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.live-container .onAir{
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  background-color: #B40305;
+  height: 18px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1px;
+}
+.live-container .onAir p{
+  color: #EFEFF1;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.music-container{
+  display: flex;
+  align-items: center;
+}
+.video-container .bg-image,
+.live-container .bg-image{
+  background: $dark-theme-bg-item;
+  width: 100%;
+  height: 165px;
+}
+.musics-content .music-container .bg-img{
+  background: $dark-theme-bg-item;
+  height: 75px;
+  border-radius: 12px;
+  width: 75px;
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.musics-content .music-container .bg-img i{
+  font-size: 30px;
+  color: $dark-theme-color;
+}
+.video-container .video-infos,
+.live-container .live-infos{
+  display: flex;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+  height: 4rem;
+  overflow: hidden;
+  background-color: rgba(16, 17, 20, .25);
+}
+
+
+.video-container:nth-child(1) .video-infos{
+  height: 4.5rem;
+}
+
+
+.video-container .video-infos .bg-infos{
+  position: absolute;
+  top: -50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  height: auto;
+  z-index: -1;
+}
+.music-container .music-infos{
+  color: $dark-theme-color;
+}
+.music-container .music-infos h3{
+  font-size: 18px;
+  text-overflow: ellipsis;
+  color: $dark-theme-color;
+}
+.music-container .music-infos p{
+  color: $dark-theme-color;
+  font-size: 15px;
+}
+.video-container .video-infos .left-container,
+.live-container .live-infos .left-container{
+  width: 20%;
+  padding-top: .7rem;
+  display: flex;
+  padding-bottom: .5rem;
+}
+.video-container .video-infos .user-picture,
+.live-container .live-infos .user-picture{
+  width: 42px;
+  height: 42px;
+  border-radius: 9999px;
+  background: $dark-theme-bg-item;
+  position: relative;
+  overflow: hidden;
+}
+.video-container .video-infos .user-picture img,
+.live-container .live-infos .user-picture img{
+  width: 100%;
+  height: 100%;
+}
+.video-container .video-infos .right-container,
+.live-container .live-infos .right-container{
+  max-width: calc(80% - 30px);
+  display: flex;
+  padding-top: .8rem;
+  flex-direction: column;
+  margin-left: .5rem;
+  position: relative;
+}
+.video-container .video-infos .right-container .video-name,
+.live-container .live-infos .right-container .live-name{
+  width: 100%;
+  display: flex;
+}
+.video-container .video-infos .right-container .video-name h3,
+.live-container .live-infos .right-container .live-name h3{
+  font-size: 18px;
+  color: #EFEFF1;
+  width: 100%;
+  display: block;
+  max-height: 34px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 17.5px;
+}
+.video-container .video-infos .right-container .video-name .more,
+.live-container .live-infos .right-container .live-name .more{
+  width: 15px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 25px;
+  align-items: center;
+  border-radius: 3px;
+  right: -20px;
+  transition: all .2s;
+  z-index: 99;
+  background-color: rgba(47, 47, 53, 1);
+  opacity: 0;
+}
+.video-container .video-infos .right-container .video-name .more i,
+.live-container .live-infos .right-container .live-name .more i{
+  font-size: 14px;
+  color: #EFEFF1;
+}
+.video-container .video-infos .right-container p,
+.live-container .live-infos .right-container p{
+  font-size: 14px;
+  padding-top: 2px;
+  color: rgba(239, 239, 241, .7);
+}
+// .video-container:hover .video-infos .title-infos .video-name .more{
+//   opacity: 1;
+// }

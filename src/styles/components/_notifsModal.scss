@@ -1,0 +1,98 @@
+.nav-right-container {
+  
+  .notifs-btn-container{
+    position: relative;
+  }
+
+  .notifs-icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 9999px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s;
+    
+    i{
+      font-size: 18px;
+      color: $dark-theme-color;
+    }
+  }
+
+  .notifs-icon:active{
+    background: #404043;
+  }
+}
+.notifs-modal{
+  position: absolute;
+  background-color: #191919;
+  padding: .6rem;
+  right: 0px;
+  border-radius: 8px;
+}
+.notifs-modal-container{
+  position: relative;
+  z-index: 98;
+
+  .header{
+    display: flex;
+    padding: .2rem;
+    align-items: center;
+
+    h3{
+      color: $dark-theme-color;
+      margin-right: 4rem;
+      font-size: 17px;
+    }
+
+    .settings,
+    .close{
+      height: 28px;
+      width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      transition: all .3s;
+      cursor: pointer;
+      margin-left: 5px;
+    }
+
+    .settings i{
+      font-size: 14px;
+      color: rgba(239, 239, 241, .7);
+      transition: all .2s;
+    }
+
+    .close i{
+      font-size: 16px;
+      color: $dark-theme-color;
+    }
+
+    .settings:hover,
+    .close:hover{
+      background: rgba(239, 239, 241, .1);
+    }
+
+    .settings:hover i{
+      color: $dark-theme-color;
+    }
+
+    .settings:active,
+    .close:active{
+      background: rgba(239, 239, 241, .18);
+    }
+  }
+
+  .notifs-content{
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .notifs-content p{
+    font-size: 14px;
+    color: rgba(239, 239, 241, .8);
+  }
+}

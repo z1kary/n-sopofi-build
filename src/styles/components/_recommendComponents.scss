@@ -1,0 +1,119 @@
+.videos-section:hover .header .settings,
+.musics-section:hover .header .settings,
+.lives-section:hover .header .settings,
+.meditation-section:hover .header .settings{
+  visibility: visible;
+  opacity: 1;
+}
+.videos-section,
+.musics-section,
+.lives-section,
+.meditation-section{
+  margin-bottom: 2.5rem;
+}
+.videos-section .header,
+.musics-section .header,
+.lives-section .header,
+.meditation-section .header{
+  display: flex;
+  padding-left: 12px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.videos-section .header a,
+.musics-section .header a,
+.lives-section .header a,
+.meditation-section .header a{
+  font-size: 22px;
+  color: #EFEFF1;
+}
+.videos-section .header i,
+.musics-section .header i,
+.lives-section .header i,
+.meditation-section .header i{
+  font-size: 19px;
+  padding-left: 10px;
+}
+.videos-section .header .settings,
+.musics-section .header .settings,
+.lives-section .header .settings,
+.meditation-section .header .settings{
+  margin-left: auto;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .2s;
+}
+.videos-section .header .settings i,
+.musics-section .header .settings i,
+.lives-section .header .settings i,
+.meditation-section .header .settings i{
+  padding-left: 0px;
+  font-size: 18px;
+  color: rgba(239, 239, 241, .7);
+}
+.videos-section .header .settings:hover i,
+.musics-section .header .settings:hover i,
+.lives-section .header .settings:hover i,
+.meditation-section .header .settings:hover i{
+  color: rgba(239, 239, 241, .9);
+}
+.videos-section .header .settings:hover,
+.musics-section .header .settings:hover,
+.lives-section .header .settings:hover,
+.meditation-section .header .settings:hover{
+  background: rgba(239, 239, 241, .1);
+}
+.videos-section .header .settings:active,
+.musics-section .header .settings:active,
+.lives-section .header .settings:active,
+.meditation-section .header .settings:active{
+  background: rgba(239, 239, 241, .18);
+}
+
+
+
+.btn-more{
+  color: rgba(239, 239, 241, .78);
+  border: none;
+  background-color: $dark-theme-bg;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: all .2s;
+}
+.btn-more:hover{
+  color: #EFEFF1;
+}
+.btn-more i{
+  font-size: 12px;
+  padding-left: 8px;
+  padding-top: 2.5px;
+}
+.btn-more-container{
+  width: calc(100% - 1.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: .5rem;
+  position: relative;
+}
+.btn-more-container .line{
+  width: 100%;
+  height: 1px;
+  background-color: rgba(239, 239, 241, .2);
+}
+.btn-more-container .btn-more-btn-container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

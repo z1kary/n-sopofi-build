@@ -1,0 +1,231 @@
+.auth-modal{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .75);
+}
+.amc{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+  .close-modal{
+    margin-left: .25rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s;
+
+    i{
+      color: $dark-theme-color;
+    }
+  }
+
+  .close-modal:hover{
+    background: rgba(239, 239, 241, .2);
+  }
+
+  .close-modal:active{
+    background: rgba(239, 239, 241, .3);
+  }
+  
+  .auth-modal-container{
+    width: 28%;
+    background: $dark-theme-nav-bg;
+    border-radius: 5px;
+    z-index: 99;
+    
+    .auth-modal-content{
+      padding: 1.5rem;
+      
+      .header{
+        display: flex;
+        position: relative;
+        margin-bottom: -2.3rem;
+
+        .logo{
+          position: relative;
+          left: 0px;
+          font-size: 19px;
+          color: $dark-theme-color;
+
+          img{
+            width: 100px;
+          }
+        }
+
+        .text{
+          margin-right: auto;
+          margin-top: .7rem;
+          margin-left: .5rem;
+
+          h2{
+            font-size: 21px;
+            color: $dark-theme-color;
+          }
+        }
+      }
+
+      .auth-nav{
+        display: flex;
+        width: 100%;
+        margin: 1rem 0;
+        padding-top: .5rem;
+        border-bottom: 1px solid rgba(239, 239, 241, .1);
+
+        .login-btn,
+        .signup-btn{
+          padding: .5rem .7rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          margin-bottom: 2px solid transparent;
+        }
+
+        .login-btn h2,
+        .signup-btn h2{
+          font-size: 15px;
+          color: $dark-theme-color;
+        }
+
+        .active{
+          border-bottom: 2px solid $dark-theme-primary-color;
+
+          h2{
+            color: $dark-theme-primary-color;
+            font-weight: bold;
+          }
+        }
+      }
+      .form-auth{
+        display: flex;
+        margin-top: 1.5rem;
+        flex-direction: column;
+
+        .form-row{
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 1rem;
+
+          .form-inputs{
+            display: flex;
+          }
+
+          .dob-day{
+            width: calc(33.3333% - 1rem);
+          }
+
+          .dob-month{
+            width: 33.3333%;
+            margin: 0 1rem;
+            background: #464649;
+            border: 2px solid #464649;
+            border-radius: 5px;
+            font-size: 15px;
+            color: $dark-theme-color;
+            padding: .3rem .5rem;
+            transition: all .2s;
+          }
+
+          .dob-year{
+            width: calc(33.3333% - 1rem);
+          }
+
+          input{
+            background: #464649;
+            border: 2px solid #464649;
+            border-radius: 5px;
+            font-size: 15px;
+            color: $dark-theme-color;
+            padding: .3rem .5rem;
+            transition: all .2s;
+          }
+
+          input:hover{
+            border-color: rgba(239, 239, 241, .25);
+          }
+
+          input:focus{
+            background: #000;
+            border-color: $dark-theme-primary-color;
+          }
+        }
+
+        label{
+          margin-bottom: 8px;
+          font-size: 15px;
+          color: $dark-theme-color;
+        }
+
+        .lost-password{
+          margin-bottom: 1rem;
+          cursor: pointer;
+
+          span{
+            font-size: 14px;
+            color: $dark-theme-primary-color;
+            transition: all .2s;
+          }
+        }
+
+        .lost-password:hover span{
+          text-decoration: underline;
+        }
+
+        .cgu{
+          margin-bottom: 1rem;
+          margin-top: .5rem;
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+
+          p{
+            font-size: 14px;
+            text-align: center;
+            color: rgba(239, 239, 241, .8);
+          }
+        }
+
+        .submit-btn{
+          background: $dark-theme-primary-color;
+          border-radius: 5px;
+          cursor: pointer;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: .45rem 0;
+          color: $dark-theme-color;
+          font-size: 15px;
+          margin-top: 10px;
+          transition: all .3s;
+        }
+
+        .submit-btn:hover{
+          background: #3B79DF;
+        }
+
+        .off{
+          background: #1F2024;
+          color: rgba(239, 239, 241, .3);
+          cursor: not-allowed;
+        }
+
+        .off:hover{
+          background: #1F2024;
+        }
+      }
+    }
+  }
+}
