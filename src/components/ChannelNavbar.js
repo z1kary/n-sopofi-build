@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import FollowBtn from './FollowBtn'
 import { isEmpty } from './Utils'
 
@@ -41,7 +42,7 @@ const ChannelNavbar = () => {
       {!isEmpty(userData) && (
         <>
           {userData._id === userChannelData._id ? (
-            <div>Votre profil</div>
+            <Link to={"dashboard/" + userData.username + "/home"} className="btn-add-video"><i className="fas fa-plus"></i> Ajouter une vidéo</Link>
           ) : (
             <div className="right">
               <FollowBtn idToHandle={userChannelData._id} />

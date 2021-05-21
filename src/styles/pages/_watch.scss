@@ -1,5 +1,44 @@
+.watch-container{
+  width: 100%;
+  display: flex;
+}
+.others-videos{
+  width: 25%;
+  height: 10vh;
+  padding: 1rem;
+
+  .title{
+    padding-top: .5rem;
+    padding-bottom: 1.2rem;
+    p{
+      font-size: 22px;
+    }
+  }
+
+  .o-videos{
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+    .bg-video{
+      height: 180px;
+      width: 100%;
+      background-color: $dark-theme-bg-item;
+    }
+
+    .title-o-video{
+      padding-top: .8rem;
+      padding-left: .5rem;
+      p{
+        font-size: 18px;
+      }
+    }
+  }
+}
+.video-played-container{
+  width: 75%;
+}
 .video-player{
   width: 100%;
-  height: 550px;
+  height: auto;
   background-color: #1F2024;
 }

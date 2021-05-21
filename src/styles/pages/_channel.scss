@@ -3,6 +3,22 @@
   background: #404043;
   height: 350px;
 }
+.btn-add-video{
+  color: $dark-theme-color;
+  display: flex;
+  align-items: center;
+  border: 2px solid $dark-theme-primary-color;
+  padding: .5rem 1rem;
+  border-radius: 12px;
+  transition: all .2s;
+
+  i{
+    padding-right: 7px;
+  }
+}
+.btn-add-video:hover{
+  background-color: $dark-theme-primary-color;
+}
 .channel-container{
   padding: 0px;
 }

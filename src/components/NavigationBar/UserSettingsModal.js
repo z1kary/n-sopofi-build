@@ -59,18 +59,18 @@ const UserSettingsModal = () => {
               </Link>
             </div>
             <div className="usm-link-parent">
-              <Link to="/dashboard/username/home" className="usm-link">
+              <Link to={"dashboard/" + userData.username + "/home"} className="usm-link">
                 <div className="usm-link-container">
-                  <div className="fi"><i className="fas fa-film"></i></div>
-                  <div className="text">Studio Vidéo</div>
+                  <div className="fi"><i className="fas fa-poll"></i></div>
+                  <div className="text">Tableau de bord</div>
                 </div>
               </Link>
             </div>
             <div className="usm-link-parent">
-              <Link to='/dashboard/username/home' className="usm-link">
+              <Link to={"dashboard/" + userData.username + "/video"} className="usm-link">
                 <div className="usm-link-container">
-                  <div className="fi"><i className="fas fa-poll"></i></div>
-                  <div className="text">Tableau de bord</div>
+                  <div className="fi"><i className="fas fa-film"></i></div>
+                  <div className="text">Studio Vidéo</div>
                 </div>
               </Link>
             </div>

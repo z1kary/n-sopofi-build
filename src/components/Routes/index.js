@@ -10,6 +10,7 @@ import Meditation from '../../pages/Meditation'
 import Channel from '../../pages/Channel'
 import Settings from '../../pages/Settings/index'
 import DashboardHome from '../../pages/Dashboard/Home'
+import DashboardVideo from '../../pages/Dashboard/Video'
 import Explore from '../../pages/Explore'
 import Logout from '../NavigationBar/Logout'
 
@@ -26,7 +27,8 @@ const index = () => {
         <Route path='/meditation' component={Meditation} />
         <Route path='/explore' component={Explore} />
         <Route path='/settings' component={Settings} />
-        <Route path='/dashboard/username/home' component={DashboardHome} />
+        <Route exact path='/dashboard/:username/home' component={DashboardHome} />
+        <Route exact path='/dashboard/:username/video' component={DashboardVideo} />
         <Route exact path='/:username' component={Channel} />
         <Redirect to="/"/>
       </Switch>

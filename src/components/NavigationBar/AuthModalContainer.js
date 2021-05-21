@@ -41,7 +41,7 @@ const AuthModalContainer = (props) => {
                 )}
               </div>
               <div className="logo">
-                <img src="http://localhost:3000/uploads/sopofi-logo-white.png" alt=""/>
+                <img src={process.env.REACT_APP_CLIENT_URL + "uploads/logo.png"} alt="logo"/>
               </div>
             </div>
             <div className="auth-nav">
